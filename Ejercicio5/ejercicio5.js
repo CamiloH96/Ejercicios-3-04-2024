@@ -1,10 +1,10 @@
 console.log("---- Ejercicio 5 ----");
 
-const velocidad = process.argv;
-console.log(`Velocidad dada ${velocidad[2]} por el usuario`)
-const hora = process.argv;
-console.log(`Velocidad dada ${hora[3]} por el usuario`)
-const resp = velocidad[2] / hora[3];
+const velocidad = parseFloat(process.argv[2]);
+console.log(`Velocidad dada ${velocidad} por el usuario`)
+const hora = parseFloat(process.argv[3]);
+console.log(`Velocidad dada ${hora} por el usuario`)
+const resp = velocidad / hora;
 if(resp >= 40 & resp <= 60){
     console.log(`Conductor Aprueba velocidad = ${resp} `)
 }if(resp>60){

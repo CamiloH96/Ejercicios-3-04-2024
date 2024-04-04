@@ -1,10 +1,10 @@
 console.log("---- Ejercicio 8 ----");
-const edad = process.argv;
-console.log(`Edad dada ${edad[2]}`)
-const mensuales = process.argv;
-console.log(`Dinero mensual dado ${mensuales[3]}`);
+const edad = parseInt(process.argv[2]);
+console.log(`Edad dada ${edad}`)
+const mensuales = parseFloat(process.argv[3]);
+console.log(`Dinero mensual dado ${mensuales}`);
 
-if(edad[2] >= 16 & mensuales[3] >= 1000){
+if(edad >= 16 & mensuales >= 1000){
     console.log(`Tiene que tributar`)
 }else{
     console.log(`No tiene que tributar`)

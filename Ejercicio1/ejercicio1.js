@@ -1,6 +1,6 @@
 console.log("---- Ejercicio 1 ----");
 
-const num = 10;
+const num = parseFloat(process.argv[2]);
 
 if (num % 2 ==  0){
     console.log(`el numero ${num} es par`);
